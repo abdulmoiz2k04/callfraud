@@ -12,8 +12,8 @@ from sklearn.linear_model import LogisticRegression
 
 # Load trained scam detection model
 try:
-    model = joblib.load("scam_model.pkl")
-    vectorizer = joblib.load("vectorizer.pkl")
+    model = joblib.load(r"D:\cybersentinels\Call Fraud\scam_model.pkl")
+    vectorizer = joblib.load(r"D:\cybersentinels\Call Fraud\vectorizer.pkl")
 except:
     raise FileNotFoundError("❌ Trained model not found. Run 'train_scam_model.py' first.")
 
